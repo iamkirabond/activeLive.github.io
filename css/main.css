@@ -1,0 +1,503 @@
+/* Спецификация  */
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}	
+p{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+a, a:hover, a:active, {
+    text-decoration: none;
+}
+a {
+    transition: all 0.5s ease;
+}
+
+a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:hover, button:focus{
+	outline: none;
+	text-decoration: none;
+
+}
+
+
+
+/* First screen  */
+.header{
+	background: #33343f url('../img/city.png') no-repeat;
+	background-size: cover;
+	padding-top: 35px;
+	padding-bottom: 242px;
+}
+.top-bar{
+	border-bottom: 1px solid #52535c;
+	margin: 0 0 178px;
+}
+.logo-wpapper{
+	padding: 0;
+}
+.logo, .menu{
+	text-transform: uppercase;
+}
+.logo{
+	font-size: 30px;
+	font-weight: 700;
+	color: #5e6ad7 !important;
+}
+.logo span{
+	font-weight: 400;
+	color: #fff;
+}
+.nav-wrapper{
+	padding: 0;
+}
+.menu{
+	margin-top: 14px;
+}
+.menu__item a{
+	display: block;
+    font-size: 14px;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    padding: 0 30px 0 50px;
+}
+.menu__item a:first-child{
+	padding-left: 0;
+}
+.menu__item a:last-child{
+	padding-right: 0;
+}
+.menu__item a:hover{
+	text-decoration: none;
+	border-bottom: 3px solid #9a9a9f;
+}
+.offer{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.offer__title{
+	font-size: 45px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 34px;
+}
+.offer__discription{
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	width: 556px;
+	margin-bottom: 29px;
+}
+.btn{
+	padding: 12px 47px;
+	background-color: #e84545;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+.btn:focus{
+	box-shadow: none;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #e84545;
+	border: 1px solid #e84545;
+}
+
+
+/*   Second screen  */
+
+.features{
+	padding: 120px 0 52px;;
+}
+.feature{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 70px;
+}
+.feature__title{
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 18px;
+    text-align: center;
+}
+.feature__text{
+	font-size: 14px;
+	font-weight: 400;
+	color: #80858b;
+	width: 299px;
+	text-align: center;
+}
+.feature__img{
+	margin-bottom: 33px;
+}
+
+
+
+
+/*   Third screen   */
+.works{
+    padding-bottom: 105px;
+}
+.work{
+	position: relative;
+	margin-bottom: 25px;
+}
+.work__img{
+	display: block;
+	width: 100%;
+}
+.work__overlay{
+	display: none;
+	position: absolute;
+	background: rgba(232, 69, 69, 0.9);;
+	width: 100%;
+	left: 0;
+    top: 0;
+    width: 100%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+}
+.work__title{
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.work__ui{
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+}
+.work:hover .work__overlay{
+	display: flex;
+}
+
+
+
+/*   Forth screen  */
+.team{
+	padding-top: 125px;
+	background: #f1f2fd;
+	padding-bottom: 118px;
+}
+.member__name{
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: none;
+	margin-top: 25px;
+	margin-bottom: 7px;
+}
+.member__img{
+	width: 100%;
+}
+.member__position{
+	text-transform: uppercase;
+	color: #e84545;
+	font-size: 13px;
+	font-weight: 400;
+}
+.member__text{
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 19px;
+	width: 270px;
+	margin-bottom: 26px;
+}
+.member__social{
+	display: flex;
+}
+.member__link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 39px;
+	background: #fff;
+	border: #e8ecee solid 1px;
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+
+/*   Fifth screen   */
+
+.woman{
+	background: url('../img/woman.png') no-repeat center;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+}
+.quote{
+	background-color: #53354a;
+	color: #fff;
+	padding: 130px 0 0px 69px;
+	height: 100%;
+}
+.quote__text{
+	font-size: 36px;
+	font-style: italic;
+	width: 505px;
+	line-height: 1.18em;
+}
+.quote__author{
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 31px;
+    margin-left: 3px;
+}
+.container-fluid__plain{
+	padding: 0;
+
+}
+
+/*   Sixth screen   */
+
+
+.free{
+	padding: 95px 0 100px;
+}
+.download{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.dowload__title{
+	text-transform: none;
+	font-size: 28px;
+	font-weight: 700;
+	text-align: center;
+}
+.download__text{
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 11px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+.download__btn{
+	padding: 12px 81px;
+}
+
+
+/*   Footer screen   */
+
+.footer{
+	background-color: #3a3e64;
+	padding: 83px 0 85px;
+	position: relative;
+}
+.footer__card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer__title{
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 16px;
+
+}
+.footer__title_location{
+	margin-left: -13px;
+}
+.footer__text{
+	color: #808080;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+.footer__text_location{
+	width: 166px;
+}
+.footer__text_love{
+	width: 325px;
+}
+.footer__card_location{
+	margin-left: -16px;
+}
+.footer__card_about{
+	margin-left: 20px;
+}
+.footer__text_love .red{
+	color: #e84545;
+}
+.footer__text_love .name{
+	color: #fff;
+}
+.footer::after{
+	content: '';
+	height: 12px;
+	width: 100%;
+	background: #313454;	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px){
+	.quote__text{
+		width: 411px;
+	}
+	.member__img, .member__text{
+		width: 100%;
+	}
+}
+
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {
+	.offer__title{
+		line-height: 1.7em;
+    	margin-bottom: 29px;
+	}
+
+	.member{
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.member__img, .member__text{
+		width: 100%;
+	}
+	.team{
+		padding-bottom: 83px;
+
+	}
+	.feature__text{
+		width: 100%;
+	}
+	.quote{
+		height: 500px;
+		text-align: center;
+	}
+	.quote__text{
+		width: 352px;
+		font-size: 29px;
+		margin: 0 auto;
+	}
+	.footer__text{
+		width: 100%;
+	}
+	.footer__text_love{
+		width: 95%;
+	}
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+	.menu{
+		display: none !important;
+	}
+	.logo-wpapper{
+		margin-left: auto;
+	}
+	.woman, .quote{
+		height: 351px;
+	}
+	.quote{
+		padding-top: 58px;
+		padding-left: 0;
+	}
+	.download__title{
+		font-size: 21px;
+		line-height: 1.7em;
+	}
+	.download__text {
+    	font-size: 12px;
+	}
+	.footer{
+		padding-bottom: 55px;
+	}
+	.footer__card{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.footer__title {
+	    font-size: 16px;
+	}
+	.footer__title_location, .footer__card_location{
+		margin-left: 0;
+	}
+	.footer__text_love {
+	    width: 69%;
+	}
+	.footer__card_about{
+		margin-left: 0;
+	}
+	.footer__text_about{
+		width: 82%;
+	}
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+	.header{
+		padding-bottom: 150px;
+	}
+	.top-bar{
+		margin-bottom: 105px;
+	}
+	.offer__title {
+	    font-size: 36px;
+    }
+	.works {
+    	padding-bottom: 65px;
+    }
+	.team {
+	    padding-top: 90px;
+    }
+	.offer__discription{
+		width: 90%;
+		font-size: 17px;
+	}
+	.features {
+	    padding-bottom: 52px;
+	}
+	.feature__text {
+	    width: 69%;
+	}
+	.woman, .quote {
+	    height: 280px;
+	}
+	.quote__text {
+	    font-size: 23px;
+		width: 90%;
+	}
+	.quote__author {
+    	font-size: 11px;
+    }
+    .footer__text {
+	    width: 69%;
+	}
+}
+
