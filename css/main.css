@@ -43,15 +43,13 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 .header{
 	background: #33343f url('../img/city.png') no-repeat;
 	background-size: cover;
+	background-position: left center;
 	padding-top: 35px;
 	padding-bottom: 242px;
 }
 .top-bar{
 	border-bottom: 1px solid #52535c;
 	margin: 0 0 178px;
-}
-.logo-wpapper{
-	padding: 0;
 }
 .logo, .menu{
 	text-transform: uppercase;
@@ -64,9 +62,6 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 .logo span{
 	font-weight: 400;
 	color: #fff;
-}
-.nav-wrapper{
-	padding: 0;
 }
 .menu{
 	margin-top: 14px;
@@ -397,11 +392,11 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 		width: 100%;
 	}
 	.quote{
-		height: 500px;
+		padding: 73px 60px;
 		text-align: center;
 	}
 	.quote__text{
-		width: 352px;
+		width: 100%;
 		font-size: 29px;
 		margin: 0 auto;
 	}
@@ -415,18 +410,21 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 
 /* 576 - 768 px */
 @media screen and (max-width: 768px) {
+	.header{
+		padding-bottom: 150px;
+	}
+	.top-bar{
+		margin-bottom: 105px;
+	}
 	.menu{
 		display: none !important;
 	}
-	.logo-wpapper{
-		margin-left: auto;
+	.logo{
+		display: block;
+		text-align: center;
 	}
-	.woman, .quote{
+	.woman{
 		height: 351px;
-	}
-	.quote{
-		padding-top: 58px;
-		padding-left: 0;
 	}
 	.download__title{
 		font-size: 21px;
@@ -461,12 +459,7 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 
 /* 320 - 576 px */
 @media screen and (max-width: 576px) {
-	.header{
-		padding-bottom: 150px;
-	}
-	.top-bar{
-		margin-bottom: 105px;
-	}
+
 	.offer__title {
 	    font-size: 36px;
     }
@@ -483,10 +476,7 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 	.features {
 	    padding-bottom: 52px;
 	}
-	.feature__text {
-	    width: 69%;
-	}
-	.woman, .quote {
+	.woman {
 	    height: 280px;
 	}
 	.quote__text {
