@@ -66,6 +66,7 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 	background-position: left center;
 	padding-top: 35px;
 	padding-bottom: 242px;
+	height: 100vh;
 }
 .top-bar{
 	border-bottom: 1px solid #52535c;
