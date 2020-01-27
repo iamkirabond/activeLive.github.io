@@ -36,7 +36,27 @@ a, a:hover, a:active, a:focus, input, input:hover, input:focus, button, button:h
 	text-decoration: none;
 
 }
+/* Preloader */
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
 
+#page-preloader .spinner {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('../img/spinner.svg') no-repeat 50% 50%;
+    margin: -32px 0 0 -32px;
+}
+/* Preloader END */
 
 
 /* First screen  */
